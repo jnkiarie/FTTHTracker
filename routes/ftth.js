@@ -7,7 +7,7 @@ router.use(bodyParser.urlencoded({ extended: true }));
 
 /* GET ftth customers */
 //View User Data
-router.get('/', function (req, res, next) {
+router.get('/', function (req, res) {
 
     Ftth.find({}, (err, data) => {
       if (err) {
